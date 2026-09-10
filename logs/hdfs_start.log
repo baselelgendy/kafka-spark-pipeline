@@ -1,0 +1,4 @@
+Starting namenodes on [localhost]
+Starting datanodes
+localhost: ERROR: Cannot set priority of datanode process 6951
+Starting secondary namenodes [10.0.2.15]

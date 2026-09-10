@@ -1,0 +1,334 @@
+2026-09-11 05:38:22: Starting HiveServer2
+2026-09-11 05:38:23,446 INFO  [main] conf.HiveConf: Found configuration file file:/usr/local/hive/hive-3.1.2/conf/hive-site.xml
+2026-09-11 05:38:25,740 INFO  [main] server.HiveServer2: 3.1.jar:/home/hadoop/hadoop/share/hadoop/yarn/hadoop-yarn-server-router-3.3.1.jar:/home/hadoop/hadoop/share/hadoop/yarn/hadoop-yarn-registry-3.3.1.jar:/home/hadoop/hadoop/share/hadoop/yarn/hadoop-yarn-client-3.3.1.jar:/home/hadoop/hadoop/share/hadoop/yarn/hadoop-yarn-server-tests-3.3.1.jar:/home/hadoop/hadoop/share/hadoop/yarn/hadoop-yarn-server-common-3.3.1.jar:/home/hadoop/hadoop/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.3.1.jar:/home/hadoop/hadoop/share/hadoop/yarn/hadoop-yarn-services-api-3.3.1.jar:/home/hadoop/hadoop/share/hadoop/yarn/hadoop-yarn-applications-mawo-core-3.3.1.jar:/home/hadoop/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.1.jar:/home/hadoop/hadoop/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.3.1.jar
+STARTUP_MSG:   build = git://HW13934/Users/gates/tmp/hive-branch-3.1/hive -r 8190d2be7b7165effa62bd21b7d60ef81fb0e4af; compiled by 'gates' on Thu Aug 22 15:01:18 PDT 2019
+************************************************************/
+2026-09-11 05:38:25,757 INFO  [main] server.HiveServer2: Starting HiveServer2
+Hive Session ID = 138b0179-97cc-4575-bce2-6cbeeeb77592
+2026-09-11 05:38:25,956 INFO  [main] SessionState: Hive Session ID = 138b0179-97cc-4575-bce2-6cbeeeb77592
+2026-09-11 05:38:27,218 INFO  [main] session.SessionState: Created HDFS directory: /tmp/student/138b0179-97cc-4575-bce2-6cbeeeb77592
+2026-09-11 05:38:27,239 INFO  [main] session.SessionState: Created local directory: /tmp/student/138b0179-97cc-4575-bce2-6cbeeeb77592
+2026-09-11 05:38:27,251 INFO  [main] session.SessionState: Created HDFS directory: /tmp/student/138b0179-97cc-4575-bce2-6cbeeeb77592/_tmp_space.db
+2026-09-11 05:38:27,271 INFO  [main] sqlstd.SQLStdHiveAccessController: Created SQLStdHiveAccessController for session context : HiveAuthzSessionContext [sessionString=138b0179-97cc-4575-bce2-6cbeeeb77592, clientType=HIVESERVER2]
+2026-09-11 05:38:27,272 WARN  [main] session.SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+2026-09-11 05:38:28,240 INFO  [main] metastore.HiveMetaStore: 0: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+2026-09-11 05:38:28,259 WARN  [main] metastore.ObjectStore: datanucleus.autoStartMechanismMode is set to unsupported value null . Setting it to value: ignored
+2026-09-11 05:38:28,269 INFO  [main] metastore.ObjectStore: ObjectStore, initialize called
+2026-09-11 05:38:28,270 INFO  [main] conf.MetastoreConf: Found configuration file file:/usr/local/hive/hive-3.1.2/conf/hive-site.xml
+2026-09-11 05:38:28,271 INFO  [main] conf.MetastoreConf: Unable to find config file hivemetastore-site.xml
+2026-09-11 05:38:28,271 INFO  [main] conf.MetastoreConf: Found configuration file null
+2026-09-11 05:38:28,272 INFO  [main] conf.MetastoreConf: Unable to find config file metastore-site.xml
+2026-09-11 05:38:28,272 INFO  [main] conf.MetastoreConf: Found configuration file null
+2026-09-11 05:38:28,425 INFO  [main] DataNucleus.Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+2026-09-11 05:38:29,046 INFO  [main] hikari.HikariDataSource: HikariPool-1 - Starting...
+2026-09-11 05:38:29,301 INFO  [main] hikari.HikariDataSource: HikariPool-1 - Start completed.
+2026-09-11 05:38:29,358 INFO  [main] hikari.HikariDataSource: HikariPool-2 - Starting...
+2026-09-11 05:38:29,363 INFO  [main] hikari.HikariDataSource: HikariPool-2 - Start completed.
+2026-09-11 05:38:29,421 INFO  [main] metastore.ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+2026-09-11 05:38:29,534 INFO  [main] metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is MYSQL
+2026-09-11 05:38:29,535 INFO  [main] metastore.ObjectStore: Initialized ObjectStore
+2026-09-11 05:38:29,698 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:29,698 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:29,700 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:29,700 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:29,700 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:29,700 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:31,747 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:31,747 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:31,747 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:31,747 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:31,748 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:31,748 WARN  [main] DataNucleus.MetaData: Metadata has jdbc-type of null yet this is not valid. Ignored
+2026-09-11 05:38:34,434 INFO  [main] metastore.HiveMetaStore: Added admin role in metastore
+2026-09-11 05:38:34,436 INFO  [main] metastore.HiveMetaStore: Added public role in metastore
+2026-09-11 05:38:34,451 INFO  [main] metastore.HiveMetaStore: No user is added in admin role, since config is empty
+2026-09-11 05:38:34,565 INFO  [main] metastore.RetryingMetaStoreClient: RetryingMetaStoreClient proxy=class org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient ugi=student (auth:SIMPLE) retries=1 delay=1 lifetime=0
+2026-09-11 05:38:34,590 INFO  [main] metastore.HiveMetaStore: 0: get_all_functions
+2026-09-11 05:38:34,592 INFO  [main] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_all_functions	
+2026-09-11 05:38:34,641 INFO  [main] service.CompositeService: Operation log root directory is created: /tmp/student/operation_logs
+2026-09-11 05:38:34,642 INFO  [main] service.CompositeService: HiveServer2: Background operation thread pool size: 100
+2026-09-11 05:38:34,642 INFO  [main] service.CompositeService: HiveServer2: Background operation thread wait queue size: 100
+2026-09-11 05:38:34,642 INFO  [main] service.CompositeService: HiveServer2: Background operation thread keepalive time: 10 seconds
+2026-09-11 05:38:34,645 INFO  [main] service.CompositeService: Connections limit are user: 0 ipaddress: 0 user-ipaddress: 0
+2026-09-11 05:38:34,648 INFO  [main] service.AbstractService: Service:OperationManager is inited.
+2026-09-11 05:38:34,648 INFO  [main] service.AbstractService: Service:SessionManager is inited.
+2026-09-11 05:38:34,648 INFO  [main] service.AbstractService: Service:CLIService is inited.
+2026-09-11 05:38:34,648 INFO  [main] service.AbstractService: Service:ThriftBinaryCLIService is inited.
+2026-09-11 05:38:34,648 INFO  [main] service.AbstractService: Service:HiveServer2 is inited.
+2026-09-11 05:38:34,847 INFO  [main] metastore.HiveMetaStoreClient: Mestastore configuration metastore.filter.hook changed from org.apache.hadoop.hive.ql.security.authorization.plugin.AuthorizationMetaStoreFilterHook to org.apache.hadoop.hive.metastore.DefaultMetaStoreFilterHookImpl
+2026-09-11 05:38:34,849 INFO  [main] metastore.HiveMetaStore: 0: Cleaning up thread local RawStore...
+2026-09-11 05:38:34,849 INFO  [main] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=Cleaning up thread local RawStore...	
+2026-09-11 05:38:34,849 INFO  [main] metastore.HiveMetaStore: 0: Done cleaning up thread local RawStore
+2026-09-11 05:38:34,849 INFO  [main] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=Done cleaning up thread local RawStore	
+Hive Session ID = b1331a59-63b5-4939-a8d5-5e9b4e01fb7c
+2026-09-11 05:38:34,859 INFO  [pool-10-thread-1] SessionState: Hive Session ID = b1331a59-63b5-4939-a8d5-5e9b4e01fb7c
+2026-09-11 05:38:34,861 INFO  [main] results.QueryResultsCache: Initializing query results cache at /tmp/hive/_resultscache_
+2026-09-11 05:38:34,898 INFO  [main] results.QueryResultsCache: Query results cache: cacheDirectory /tmp/hive/_resultscache_/results-919d1b05-9fa2-4110-860c-2e4d1b3207c1, maxCacheSize 2147483648, maxEntrySize 10485760, maxEntryLifetime 3600000
+2026-09-11 05:38:34,901 INFO  [pool-10-thread-1] session.SessionState: Created HDFS directory: /tmp/student/b1331a59-63b5-4939-a8d5-5e9b4e01fb7c
+2026-09-11 05:38:34,903 INFO  [main] metastore.HiveMetaStore: 0: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+2026-09-11 05:38:34,903 WARN  [main] metastore.ObjectStore: datanucleus.autoStartMechanismMode is set to unsupported value null . Setting it to value: ignored
+2026-09-11 05:38:34,903 INFO  [main] metastore.ObjectStore: ObjectStore, initialize called
+2026-09-11 05:38:34,906 INFO  [pool-10-thread-1] session.SessionState: Created local directory: /tmp/student/b1331a59-63b5-4939-a8d5-5e9b4e01fb7c
+2026-09-11 05:38:34,915 INFO  [main] metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is MYSQL
+2026-09-11 05:38:34,915 INFO  [main] metastore.ObjectStore: Initialized ObjectStore
+2026-09-11 05:38:34,915 INFO  [main] metastore.RetryingMetaStoreClient: RetryingMetaStoreClient proxy=class org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient ugi=student (auth:SIMPLE) retries=1 delay=1 lifetime=0
+2026-09-11 05:38:34,919 INFO  [pool-10-thread-1] session.SessionState: Created HDFS directory: /tmp/student/b1331a59-63b5-4939-a8d5-5e9b4e01fb7c/_tmp_space.db
+2026-09-11 05:38:34,927 INFO  [pool-10-thread-1] metastore.HiveMetaStore: 1: get_databases: @hive#
+2026-09-11 05:38:34,929 INFO  [pool-10-thread-1] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_databases: @hive#	
+2026-09-11 05:38:34,932 INFO  [pool-10-thread-1] metastore.HiveMetaStore: 1: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+2026-09-11 05:38:34,932 INFO  [main] events.NotificationEventPoll: Initializing lastCheckedEventId to 0
+2026-09-11 05:38:34,935 INFO  [main] server.HiveServer2: Starting Web UI on port 10002
+2026-09-11 05:38:34,937 INFO  [pool-10-thread-1] metastore.ObjectStore: ObjectStore, initialize called
+2026-09-11 05:38:34,971 INFO  [pool-10-thread-1] metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is MYSQL
+2026-09-11 05:38:34,972 INFO  [pool-10-thread-1] metastore.ObjectStore: Initialized ObjectStore
+2026-09-11 05:38:34,982 INFO  [pool-10-thread-1] metastore.HiveMetaStore: 1: get_tables_by_type: db=@hive#default pat=.*,type=MATERIALIZED_VIEW
+2026-09-11 05:38:34,982 INFO  [pool-10-thread-1] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_tables_by_type: db=@hive#default pat=.*,type=MATERIALIZED_VIEW	
+2026-09-11 05:38:34,991 INFO  [pool-10-thread-1] metastore.HiveMetaStore: 1: get_multi_table : db=default tbls=
+2026-09-11 05:38:34,991 INFO  [pool-10-thread-1] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_multi_table : db=default tbls=	
+2026-09-11 05:38:34,996 INFO  [pool-10-thread-1] metastore.HiveMetaStore: 1: get_tables_by_type: db=@hive#ecommerce_dw pat=.*,type=MATERIALIZED_VIEW
+2026-09-11 05:38:34,996 INFO  [pool-10-thread-1] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_tables_by_type: db=@hive#ecommerce_dw pat=.*,type=MATERIALIZED_VIEW	
+2026-09-11 05:38:35,000 INFO  [pool-10-thread-1] metastore.HiveMetaStore: 1: get_multi_table : db=ecommerce_dw tbls=
+2026-09-11 05:38:35,000 INFO  [pool-10-thread-1] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_multi_table : db=ecommerce_dw tbls=	
+2026-09-11 05:38:35,000 INFO  [pool-10-thread-1] metadata.HiveMaterializedViewsRegistry: Materialized views registry has been initialized
+2026-09-11 05:38:35,017 INFO  [main] util.log: Logging initialized @12298ms
+2026-09-11 05:38:35,114 INFO  [main] service.AbstractService: Service:OperationManager is started.
+2026-09-11 05:38:35,114 INFO  [main] service.AbstractService: Service:SessionManager is started.
+2026-09-11 05:38:35,115 INFO  [main] service.AbstractService: Service:CLIService is started.
+2026-09-11 05:38:35,116 INFO  [main] service.AbstractService: Service:ThriftBinaryCLIService is started.
+2026-09-11 05:38:35,181 INFO  [main] thrift.ThriftCLIService: Starting ThriftBinaryCLIService on port 10000 with 5...500 worker threads
+2026-09-11 05:38:35,182 INFO  [main] service.AbstractService: Service:HiveServer2 is started.
+2026-09-11 05:38:35,183 WARN  [main] server.HiveServer2: No policy provider found, skip creating PrivilegeSynchonizer
+2026-09-11 05:38:35,185 INFO  [main] server.Server: jetty-9.3.20.v20170531
+2026-09-11 05:38:35,340 INFO  [main] handler.ContextHandler: Started o.e.j.w.WebAppContext@40d96578{/,file:///tmp/jetty-0.0.0.0-10002-hiveserver2-_-any-5603171072668614345.dir/webapp/,AVAILABLE}{jar:file:/usr/local/hive/hive-3.1.2/lib/hive-service-3.1.2.jar!/hive-webapps/hiveserver2}
+2026-09-11 05:38:35,340 INFO  [main] handler.ContextHandler: Started o.e.j.s.ServletContextHandler@c97721b{/static,jar:file:/usr/local/hive/hive-3.1.2/lib/hive-service-3.1.2.jar!/hive-webapps/static,AVAILABLE}
+2026-09-11 05:38:35,345 INFO  [main] server.AbstractConnector: Started ServerConnector@5db0003d{HTTP/1.1,[http/1.1]}{0.0.0.0:10002}
+2026-09-11 05:38:35,345 INFO  [main] server.Server: Started @12627ms
+2026-09-11 05:38:35,345 INFO  [main] http.HttpServer: Started HttpServer[hiveserver2] on port 10002
+2026-09-11 05:38:35,345 INFO  [main] server.HiveServer2: Web UI has started on port 10002
+2026-09-11 05:38:35,345 INFO  [main] server.HiveServer2: HS2 interactive HA not enabled. Starting tez sessions..
+2026-09-11 05:38:35,345 INFO  [main] server.HiveServer2: Starting/Reconnecting tez sessions..
+2026-09-11 05:38:35,345 INFO  [main] server.HiveServer2: Initializing tez session pool manager
+2026-09-11 05:38:35,358 INFO  [main] server.HiveServer2: Shutting down HiveServer2
+2026-09-11 05:38:35,358 INFO  [main] thrift.ThriftCLIService: Thrift server has stopped
+2026-09-11 05:38:35,358 INFO  [main] service.AbstractService: Service:ThriftBinaryCLIService is stopped.
+2026-09-11 05:38:35,358 INFO  [main] service.AbstractService: Service:OperationManager is stopped.
+2026-09-11 05:38:35,358 INFO  [main] service.AbstractService: Service:SessionManager is stopped.
+2026-09-11 05:38:35,360 INFO  [main] service.AbstractService: Service:CLIService is stopped.
+2026-09-11 05:38:35,360 INFO  [main] metastore.HiveMetaStore: 0: Cleaning up thread local RawStore...
+2026-09-11 05:38:35,360 INFO  [main] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=Cleaning up thread local RawStore...	
+2026-09-11 05:38:35,360 INFO  [main] metastore.HiveMetaStore: 0: Done cleaning up thread local RawStore
+2026-09-11 05:38:35,360 INFO  [main] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=Done cleaning up thread local RawStore	
+2026-09-11 05:38:35,360 INFO  [main] service.AbstractService: Service:HiveServer2 is stopped.
+2026-09-11 05:38:35,368 INFO  [main] server.AbstractConnector: Stopped ServerConnector@5db0003d{HTTP/1.1,[http/1.1]}{0.0.0.0:10002}
+2026-09-11 05:38:35,369 INFO  [main] handler.ContextHandler: Stopped o.e.j.s.ServletContextHandler@c97721b{/static,jar:file:/usr/local/hive/hive-3.1.2/lib/hive-service-3.1.2.jar!/hive-webapps/static,UNAVAILABLE}
+2026-09-11 05:38:35,374 INFO  [main] handler.ContextHandler: Stopped o.e.j.w.WebAppContext@40d96578{/,null,UNAVAILABLE}{jar:file:/usr/local/hive/hive-3.1.2/lib/hive-service-3.1.2.jar!/hive-webapps/hiveserver2}
+2026-09-11 05:38:35,379 INFO  [main] server.HiveServer2: Web UI has stopped
+2026-09-11 05:38:35,379 INFO  [main] server.HiveServer2: Stopping/Disconnecting tez sessions.
+2026-09-11 05:38:35,379 INFO  [main] server.HiveServer2: Stopped tez session pool manager.
+2026-09-11 05:38:35,380 WARN  [main] server.HiveServer2: Error starting HiveServer2 on attempt 1, will retry in 60000ms
+java.lang.NoClassDefFoundError: org/apache/tez/dag/api/TezConfiguration
+	at org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolSession$AbstractTriggerValidator.startTriggerValidator(TezSessionPoolSession.java:74)
+	at org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolManager.initTriggers(TezSessionPoolManager.java:207)
+	at org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolManager.startPool(TezSessionPoolManager.java:114)
+	at org.apache.hive.service.server.HiveServer2.initAndStartTezSessionPoolManager(HiveServer2.java:839)
+	at org.apache.hive.service.server.HiveServer2.startOrReconnectTezSessions(HiveServer2.java:822)
+	at org.apache.hive.service.server.HiveServer2.start(HiveServer2.java:745)
+	at org.apache.hive.service.server.HiveServer2.startHiveServer2(HiveServer2.java:1037)
+	at org.apache.hive.service.server.HiveServer2.access$1600(HiveServer2.java:140)
+	at org.apache.hive.service.server.HiveServer2$StartOptionExecutor.execute(HiveServer2.java:1305)
+	at org.apache.hive.service.server.HiveServer2.main(HiveServer2.java:1149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+Caused by: java.lang.ClassNotFoundException: org.apache.tez.dag.api.TezConfiguration
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 16 more
+2026-09-11 05:39:34,989 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+2026-09-11 05:39:34,990 WARN  [NotificationEventPoll 0] metastore.ObjectStore: datanucleus.autoStartMechanismMode is set to unsupported value null . Setting it to value: ignored
+2026-09-11 05:39:34,990 INFO  [NotificationEventPoll 0] metastore.ObjectStore: ObjectStore, initialize called
+2026-09-11 05:39:35,022 INFO  [NotificationEventPoll 0] metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is MYSQL
+2026-09-11 05:39:35,022 INFO  [NotificationEventPoll 0] metastore.ObjectStore: Initialized ObjectStore
+2026-09-11 05:39:35,022 INFO  [NotificationEventPoll 0] metastore.RetryingMetaStoreClient: RetryingMetaStoreClient proxy=class org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient ugi=student (auth:SIMPLE) retries=1 delay=1 lifetime=0
+2026-09-11 05:39:35,035 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:39:35,035 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:39:35,385 INFO  [main] server.HiveServer2: Starting HiveServer2
+Hive Session ID = cfe12042-66d4-446a-acff-fe5f842f3bb8
+2026-09-11 05:39:35,410 INFO  [main] SessionState: Hive Session ID = cfe12042-66d4-446a-acff-fe5f842f3bb8
+2026-09-11 05:39:35,453 INFO  [main] session.SessionState: Created HDFS directory: /tmp/student/cfe12042-66d4-446a-acff-fe5f842f3bb8
+2026-09-11 05:39:35,456 INFO  [main] session.SessionState: Created local directory: /tmp/student/cfe12042-66d4-446a-acff-fe5f842f3bb8
+2026-09-11 05:39:35,465 INFO  [main] session.SessionState: Created HDFS directory: /tmp/student/cfe12042-66d4-446a-acff-fe5f842f3bb8/_tmp_space.db
+2026-09-11 05:39:35,466 INFO  [main] sqlstd.SQLStdHiveAccessController: Created SQLStdHiveAccessController for session context : HiveAuthzSessionContext [sessionString=cfe12042-66d4-446a-acff-fe5f842f3bb8, clientType=HIVESERVER2]
+2026-09-11 05:39:35,466 WARN  [main] session.SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+2026-09-11 05:39:35,472 INFO  [main] metastore.HiveMetaStore: 0: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+2026-09-11 05:39:35,473 WARN  [main] metastore.ObjectStore: datanucleus.autoStartMechanismMode is set to unsupported value null . Setting it to value: ignored
+2026-09-11 05:39:35,473 INFO  [main] metastore.ObjectStore: ObjectStore, initialize called
+2026-09-11 05:39:35,478 INFO  [main] metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is MYSQL
+2026-09-11 05:39:35,478 INFO  [main] metastore.ObjectStore: Initialized ObjectStore
+2026-09-11 05:39:35,478 INFO  [main] metastore.RetryingMetaStoreClient: RetryingMetaStoreClient proxy=class org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient ugi=student (auth:SIMPLE) retries=1 delay=1 lifetime=0
+2026-09-11 05:39:35,478 INFO  [main] service.CompositeService: Operation log root directory is created: /tmp/student/operation_logs
+2026-09-11 05:39:35,478 INFO  [main] service.CompositeService: HiveServer2: Background operation thread pool size: 100
+2026-09-11 05:39:35,478 INFO  [main] service.CompositeService: HiveServer2: Background operation thread wait queue size: 100
+2026-09-11 05:39:35,478 INFO  [main] service.CompositeService: HiveServer2: Background operation thread keepalive time: 10 seconds
+2026-09-11 05:39:35,478 INFO  [main] service.CompositeService: Connections limit are user: 0 ipaddress: 0 user-ipaddress: 0
+2026-09-11 05:39:35,479 INFO  [main] service.AbstractService: Service:OperationManager is inited.
+2026-09-11 05:39:35,479 INFO  [main] service.AbstractService: Service:SessionManager is inited.
+2026-09-11 05:39:35,479 INFO  [main] service.AbstractService: Service:CLIService is inited.
+2026-09-11 05:39:35,479 INFO  [main] service.AbstractService: Service:ThriftBinaryCLIService is inited.
+2026-09-11 05:39:35,479 INFO  [main] service.AbstractService: Service:HiveServer2 is inited.
+2026-09-11 05:39:35,664 INFO  [main] metastore.HiveMetaStoreClient: Mestastore configuration metastore.filter.hook changed from org.apache.hadoop.hive.ql.security.authorization.plugin.AuthorizationMetaStoreFilterHook to org.apache.hadoop.hive.metastore.DefaultMetaStoreFilterHookImpl
+2026-09-11 05:39:35,664 INFO  [main] metastore.HiveMetaStore: 0: Cleaning up thread local RawStore...
+2026-09-11 05:39:35,665 INFO  [main] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=Cleaning up thread local RawStore...	
+2026-09-11 05:39:35,665 INFO  [main] metastore.HiveMetaStore: 0: Done cleaning up thread local RawStore
+2026-09-11 05:39:35,665 INFO  [main] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=Done cleaning up thread local RawStore	
+2026-09-11 05:39:35,666 INFO  [main] server.HiveServer2: Starting Web UI on port 10002
+Hive Session ID = 1c73710c-7eab-44f8-953e-e782c5813c4d
+2026-09-11 05:39:35,687 INFO  [pool-17-thread-1] SessionState: Hive Session ID = 1c73710c-7eab-44f8-953e-e782c5813c4d
+2026-09-11 05:39:35,702 INFO  [main] service.AbstractService: Service:OperationManager is started.
+2026-09-11 05:39:35,702 INFO  [main] service.AbstractService: Service:SessionManager is started.
+2026-09-11 05:39:35,712 INFO  [main] service.AbstractService: Service:CLIService is started.
+2026-09-11 05:39:35,712 INFO  [main] service.AbstractService: Service:ThriftBinaryCLIService is started.
+2026-09-11 05:39:35,714 INFO  [main] thrift.ThriftCLIService: Starting ThriftBinaryCLIService on port 10000 with 5...500 worker threads
+2026-09-11 05:39:35,729 INFO  [main] service.AbstractService: Service:HiveServer2 is started.
+2026-09-11 05:39:35,729 WARN  [main] server.HiveServer2: No policy provider found, skip creating PrivilegeSynchonizer
+2026-09-11 05:39:35,729 INFO  [main] server.Server: jetty-9.3.20.v20170531
+2026-09-11 05:39:35,880 INFO  [pool-17-thread-1] session.SessionState: Created HDFS directory: /tmp/student/1c73710c-7eab-44f8-953e-e782c5813c4d
+2026-09-11 05:39:36,159 INFO  [pool-17-thread-1] session.SessionState: Created local directory: /tmp/student/1c73710c-7eab-44f8-953e-e782c5813c4d
+2026-09-11 05:39:36,164 INFO  [main] handler.ContextHandler: Started o.e.j.w.WebAppContext@1544ded3{/,file:///tmp/jetty-0.0.0.0-10002-hiveserver2-_-any-1799443770776911530.dir/webapp/,AVAILABLE}{jar:file:/usr/local/hive/hive-3.1.2/lib/hive-service-3.1.2.jar!/hive-webapps/hiveserver2}
+2026-09-11 05:39:36,194 INFO  [main] handler.ContextHandler: Started o.e.j.s.ServletContextHandler@3ccb12d{/static,jar:file:/usr/local/hive/hive-3.1.2/lib/hive-service-3.1.2.jar!/hive-webapps/static,AVAILABLE}
+2026-09-11 05:39:36,195 INFO  [main] server.AbstractConnector: Started ServerConnector@41fc0084{HTTP/1.1,[http/1.1]}{0.0.0.0:10002}
+2026-09-11 05:39:36,195 INFO  [main] server.Server: Started @73476ms
+2026-09-11 05:39:36,195 INFO  [main] http.HttpServer: Started HttpServer[hiveserver2] on port 10002
+2026-09-11 05:39:36,195 INFO  [main] server.HiveServer2: Web UI has started on port 10002
+2026-09-11 05:39:36,195 INFO  [main] server.HiveServer2: HS2 interactive HA not enabled. Starting tez sessions..
+2026-09-11 05:39:36,195 INFO  [main] server.HiveServer2: Starting/Reconnecting tez sessions..
+2026-09-11 05:39:36,195 INFO  [main] server.HiveServer2: Initializing tez session pool manager
+2026-09-11 05:39:36,195 INFO  [main] server.HiveServer2: Tez session pool manager initialized.
+2026-09-11 05:39:36,195 INFO  [main] server.HiveServer2: Workload management is not enabled.
+2026-09-11 05:39:36,310 INFO  [pool-17-thread-1] session.SessionState: Created HDFS directory: /tmp/student/1c73710c-7eab-44f8-953e-e782c5813c4d/_tmp_space.db
+2026-09-11 05:39:36,431 INFO  [pool-17-thread-1] metastore.HiveMetaStore: 3: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+2026-09-11 05:39:36,431 WARN  [pool-17-thread-1] metastore.ObjectStore: datanucleus.autoStartMechanismMode is set to unsupported value null . Setting it to value: ignored
+2026-09-11 05:39:36,432 INFO  [pool-17-thread-1] metastore.ObjectStore: ObjectStore, initialize called
+2026-09-11 05:39:36,565 INFO  [pool-17-thread-1] metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is MYSQL
+2026-09-11 05:39:36,565 INFO  [pool-17-thread-1] metastore.ObjectStore: Initialized ObjectStore
+2026-09-11 05:39:36,565 INFO  [pool-17-thread-1] metastore.RetryingMetaStoreClient: RetryingMetaStoreClient proxy=class org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient ugi=student (auth:SIMPLE) retries=1 delay=1 lifetime=0
+2026-09-11 05:39:36,599 INFO  [pool-17-thread-1] metastore.HiveMetaStore: 3: get_databases: @hive#
+2026-09-11 05:39:36,599 INFO  [pool-17-thread-1] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_databases: @hive#	
+2026-09-11 05:39:36,604 INFO  [pool-17-thread-1] metastore.HiveMetaStore: 3: get_tables_by_type: db=@hive#default pat=.*,type=MATERIALIZED_VIEW
+2026-09-11 05:39:36,604 INFO  [pool-17-thread-1] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_tables_by_type: db=@hive#default pat=.*,type=MATERIALIZED_VIEW	
+2026-09-11 05:39:36,609 INFO  [pool-17-thread-1] metastore.HiveMetaStore: 3: get_multi_table : db=default tbls=
+2026-09-11 05:39:36,609 INFO  [pool-17-thread-1] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_multi_table : db=default tbls=	
+2026-09-11 05:39:36,609 INFO  [pool-17-thread-1] metastore.HiveMetaStore: 3: get_tables_by_type: db=@hive#ecommerce_dw pat=.*,type=MATERIALIZED_VIEW
+2026-09-11 05:39:36,609 INFO  [pool-17-thread-1] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_tables_by_type: db=@hive#ecommerce_dw pat=.*,type=MATERIALIZED_VIEW	
+2026-09-11 05:39:36,611 INFO  [pool-17-thread-1] metastore.HiveMetaStore: 3: get_multi_table : db=ecommerce_dw tbls=
+2026-09-11 05:39:36,611 INFO  [pool-17-thread-1] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_multi_table : db=ecommerce_dw tbls=	
+2026-09-11 05:39:36,611 INFO  [pool-17-thread-1] metadata.HiveMaterializedViewsRegistry: Materialized views registry has been initialized
+2026-09-11 05:40:34,937 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:40:34,938 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:41:34,936 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:41:34,936 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:42:34,938 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:42:34,939 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:43:34,939 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:43:34,939 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:44:34,937 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:44:34,938 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:45:34,937 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:45:34,937 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:46:34,942 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:46:34,943 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:47:34,948 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:47:34,949 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:48:34,938 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:48:34,939 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:49:34,936 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:49:34,936 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:50:34,938 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:50:34,938 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:51:34,938 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:51:34,938 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:52:34,937 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:52:34,937 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:53:34,940 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:53:34,940 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:54:34,938 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:54:34,938 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:55:34,936 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:55:34,937 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:56:34,942 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:56:34,942 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:57:34,940 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:57:34,941 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:58:34,938 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:58:34,938 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 05:59:34,969 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 05:59:34,969 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:00:34,940 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:00:34,940 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:01:34,940 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:01:34,940 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:02:34,942 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:02:34,943 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:03:34,945 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:03:34,946 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:04:34,944 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:04:34,944 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:05:34,938 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:05:34,938 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:06:34,938 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:06:34,939 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:07:34,939 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:07:34,939 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:08:34,973 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:08:34,973 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:09:34,941 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:09:34,942 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:10:34,941 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:10:34,941 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:11:34,944 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:11:34,944 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:12:34,939 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:12:34,940 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:13:34,943 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:13:34,943 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:14:34,941 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:14:34,941 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:15:34,943 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:15:34,944 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:16:34,940 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:16:34,940 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:17:34,954 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:17:34,955 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:18:34,940 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:18:34,940 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:19:34,943 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:19:34,944 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:20:34,950 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:20:34,950 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:21:34,947 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:21:34,947 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:22:34,938 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:22:34,939 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:23:34,938 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:23:34,939 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:24:34,939 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:24:34,941 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:25:34,937 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:25:34,937 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:26:34,939 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:26:34,939 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:27:34,951 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:27:34,951 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:28:34,939 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:28:34,939 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:29:34,939 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:29:34,940 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:30:34,940 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:30:34,940 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
+2026-09-11 06:31:34,941 INFO  [NotificationEventPoll 0] metastore.HiveMetaStore: 2: get_config_value: name=metastore.batch.retrieve.max defaultValue=50
+2026-09-11 06:31:34,941 INFO  [NotificationEventPoll 0] HiveMetaStore.audit: ugi=student	ip=unknown-ip-addr	cmd=get_config_value: name=metastore.batch.retrieve.max defaultValue=50	
