@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ShopPulse Global — Real-Time Order Ingestion Pipeline
 
 **Samsung Innovation Campus — Data Platform Engineering Task**
